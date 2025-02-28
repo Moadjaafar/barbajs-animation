@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: black;
+    color: white;
     overflow-x: hidden;
     min-height: 100vh;
     display: flex;
@@ -20,18 +20,19 @@ main {
     max-width: 800px;
     padding: 2rem;
     text-align: center;
-    background-color: white;
+    background-color: #1C1D20;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transform-origin: center;
     position: relative;
     z-index: 1;
+    border: 1px solid rgba(75, 255, 165, 0.2);
 }
 
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, #6366f1, #8b5cf6);
+    background: linear-gradient(45deg, #4BFFA5, #2be48c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -40,23 +41,25 @@ p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     line-height: 1.6;
+    color: #e0e0e0;
 }
 
 a {
     display: inline-block;
     padding: 0.8rem 1.5rem;
-    background: linear-gradient(45deg, #6366f1, #8b5cf6);
-    color: white;
+    background-color: #4BFFA5;
+    color: #1C1D20;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 4px 15px rgba(75, 255, 165, 0.4);
 }
 
 a:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+    box-shadow: 0 6px 20px rgba(75, 255, 165, 0.6);
+    background-color: #3df098;
 }
 
 .transition-wrapper {
@@ -71,13 +74,13 @@ a:hover {
     pointer-events: none;
     z-index: 100;
     opacity: 0;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.9), rgba(139, 92, 246, 0.9));
+    background: #1C1D20;
 }
 
 .transition-text {
     font-size: 3.5rem;
     font-weight: bold;
-    color: white;
+    color: #4BFFA5;
     text-align: center;
     position: relative;
 }
@@ -96,7 +99,7 @@ a:hover {
     top: 0;
     height: 100%;
     width: 3px;
-    background-color: white;
+    background-color: #4BFFA5;
     animation: blink 1s step-end infinite;
 }
 
@@ -117,7 +120,7 @@ a:hover {
 
 .particle {
     position: absolute;
-    background: #8b5cf6;
+    background: #4BFFA5;
     border-radius: 50%;
-    opacity: 0.6;
+    opacity: 0.3;
 }

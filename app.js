@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Add extra animations for elements inside the page
                 const heading = data.next.container.querySelector('h1');
                 const paragraph = data.next.container.querySelector('p');
-                const link = data.next.container.querySelector('a');
+                // const link = data.next.container.querySelector('a');
                 
                 gsap.from([heading, paragraph, link], {
                     opacity: 0,
